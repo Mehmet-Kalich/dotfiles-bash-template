@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# A script to display information about our dotfiles setup 
+
+dotfiles_dir="$HOME/dotfiles"
+file_count=$(find "$dotfiles_dir" | wc -l)
+today=$(date +%d-%m-%Y)
+
+echo "=== Dotfiles Info ==="
+echo "User: $USER"
+echo "Dotfiles location: $dotfiles_dir"
+echo "Files tracked $file_count"
+echo "Date: $today"
+
+
